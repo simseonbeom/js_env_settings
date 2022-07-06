@@ -1,0 +1,33 @@
+{
+  "name": "js_env_settings",
+  "version": "1.0.0",
+  "description": "ECMAScript 러닝",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "live-server client --host=localhost --port=3000 --no-browser --cors",
+    "start": "node server/index.js",
+    "lint": "eslint ./client/**/*.js --ignore-path .gitignore",
+    "format": "prettier --write client/**/*.js --ignore-path .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simseonbeom/js_env_settings.git"
+  },
+  "keywords": [],
+  "author": "kindtiger <seonbeom2@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simseonbeom/js_env_settings/issues"
+  },
+  "homepage": "https://github.com/simseonbeom/js_env_settings#readme",
+  "dependencies": {
+    "add-gitignore": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.19"
+  }
+}
